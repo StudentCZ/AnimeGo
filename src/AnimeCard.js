@@ -4,16 +4,21 @@ import style from './AnimeCard.module.css';
 function AnimeCard(props) {
   return (
     <article>
-      <a href={props.anime.url} target='_blank' rel='noreferrer'>
-        <figure>
-          <div>
+      <figure>
+        <div className={style.container}>
+          <a href={props.anime.url} target='_blank' rel='noreferrer'>
             <span>{props.anime.url}</span>
-            <div>
+          </a>
+          <div>
+            <a href={props.anime.url} target='_blank' rel='noreferrer'>
               <h2 className={style.cardsText}>{props.anime.title}</h2>
-            </div>
+            </a>
           </div>
-        </figure>
-      </a>
+          <div>
+            <p>{props.anime.synopsis}</p>
+          </div>
+        </div>
+      </figure>
     </article>
   );
 }
