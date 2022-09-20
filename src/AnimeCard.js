@@ -15,6 +15,12 @@ function AnimeCard(props) {
             </a>
           </div>
           <div>
+            <img
+              src={props.anime.images.jpg.image_url}
+              alt='jikan api images'
+            />
+          </div>
+          <div>
             <p>{props.anime.synopsis}</p>
           </div>
         </div>
