@@ -10,7 +10,7 @@ function Search(props) {
           <input
             className={style.box}
             type='search'
-            placeholder='search anime here...'
+            placeholder='Search anime here...'
             required
             value={props.search}
             onChange={(event) => props.setSearch(event.target.value)}
