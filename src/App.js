@@ -5,12 +5,9 @@ import Search from './Search';
 function App() {
   const [animeList, setAnimeList] = useState([]);
   const [search, setSearch] = useState('');
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
     fetchAnime();
-    setLoading(false);
   }, []);
 
   const HandleSearch = (event) => {
