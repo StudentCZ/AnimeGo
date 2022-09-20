@@ -8,7 +8,9 @@ function AnimeCard(props) {
         <figure>
           <div>
             <span>{props.anime.url}</span>
-            <h2 className={style.cardsText}>{props.anime.title}</h2>
+            <div>
+              <h2 className={style.cardsText}>{props.anime.title}</h2>
+            </div>
           </div>
         </figure>
       </a>
