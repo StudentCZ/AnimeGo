@@ -7,11 +7,7 @@ function AnimeCard(props) {
       <a href={props.anime.url} target='_blank' rel='noreferrer'>
         <figure>
           <div>
-            <img
-              className={style.cards}
-              src={props.anime.images.jpg.image_url}
-              alt='anime-images'
-            />
+            <span>{props.anime.url}</span>
             <h2 className={style.cardsText}>{props.anime.title}</h2>
           </div>
         </figure>
