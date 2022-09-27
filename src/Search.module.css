@@ -4,6 +4,9 @@
   padding: 1.5vw;
   width: 60vw;
   font-size: 3.5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list {
