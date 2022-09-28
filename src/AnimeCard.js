@@ -24,13 +24,14 @@ function AnimeCard(props) {
             <p>{props.anime.synopsis}</p>
           </div>
           <div className={style.flexContainer}>
-            <div className={style.flexBox}>
+            <div className={style.flexBox1}>
               Episodes: {props.anime.episodes}{' '}
             </div>
             <div className={style.flexBox1}>
               {' '}
               Rating: {props.anime.score}/10{' '}
             </div>
+            <div className={style.flexBox}>Year:</div>
           </div>
         </div>
       </figure>
