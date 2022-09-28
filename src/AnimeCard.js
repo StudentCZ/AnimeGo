@@ -31,7 +31,9 @@ function AnimeCard(props) {
               {' '}
               Rating: {props.anime.score}/10{' '}
             </div>
-            <div className={style.flexBox}>Year:</div>
+            <div className={style.flexBox}>
+              Year: {props.anime.year ? props.anime.year : 'N/A'}
+            </div>
           </div>
         </div>
       </figure>
