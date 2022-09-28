@@ -27,7 +27,10 @@ function AnimeCard(props) {
             <div className={style.flexBox}>
               Episodes: {props.anime.episodes}{' '}
             </div>
-            <div className={style.flexBox1}> Hello</div>
+            <div className={style.flexBox1}>
+              {' '}
+              Rating: {props.anime.score}/10{' '}
+            </div>
           </div>
         </div>
       </figure>
