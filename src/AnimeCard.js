@@ -24,8 +24,10 @@ function AnimeCard(props) {
             <p>{props.anime.synopsis}</p>
           </div>
           <div className={style.flexContainer}>
-            <div>Episodes: {props.anime.episodes} </div>
-            <div> Hello</div>
+            <div className={style.flexBox}>
+              Episodes: {props.anime.episodes}{' '}
+            </div>
+            <div className={style.flexBox1}> Hello</div>
           </div>
         </div>
       </figure>
