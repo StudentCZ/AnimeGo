@@ -10,7 +10,12 @@ function AnimeCard(props) {
             <span>{props.anime.url}</span>
           </a>
           <div>
-            <a href={props.anime.url} target='_blank' rel='noreferrer'>
+            <a
+              classname={style.titleLink}
+              href={props.anime.url}
+              target='_blank'
+              rel='noreferrer'
+            >
               <h2 className={style.cardsText}>{props.anime.title}</h2>
             </a>
           </div>
