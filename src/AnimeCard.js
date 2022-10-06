@@ -11,7 +11,7 @@ function AnimeCard(props) {
           </a>
           <div>
             <a
-              classname={style.titleLink}
+              className={style.titleLink}
               href={props.anime.url}
               target='_blank'
               rel='noreferrer'
@@ -40,6 +40,7 @@ function AnimeCard(props) {
             <div className={style.flexBox}>
               Year: {props.anime.year ? props.anime.year : 'N/A'}
             </div>
+            <div>Hello</div>
           </div>
         </div>
       </figure>
