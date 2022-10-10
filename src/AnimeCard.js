@@ -40,7 +40,12 @@ function AnimeCard(props) {
             <div className={style.flexBox1}>
               Year: {props.anime.year ? props.anime.year : 'N/A'}
             </div>
-            <div className={style.flexBox1}>Genre:</div>
+            <div className={style.flexBox1}>
+              Genre:{' '}
+              {props.anime.genres.map((ele) => {
+                return `${ele.name}, `;
+              })}
+            </div>
           </div>
         </div>
       </figure>
