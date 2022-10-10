@@ -33,7 +33,9 @@ function AnimeCard(props) {
               Episodes: {props.anime.episodes}{' '}
             </div>
             <div className={style.flexBox1}> Type: {props.anime.type}</div>
-            <div className={style.flexBox1}>Duration: </div>
+            <div className={style.flexBox1}>
+              Duration: {props.anime.duration}{' '}
+            </div>
             <div className={style.flexBox1}>
               {' '}
               Score: {props.anime.score}/10{' '}
@@ -41,11 +43,11 @@ function AnimeCard(props) {
             <div className={style.flexBox1}>
               Year: {props.anime.year ? props.anime.year : 'N/A'}
             </div>
-            <div className={style.flexBox1}>Rating:</div>
-            <div className={style.flexBox1}>
+            <div className={style.flexBox1}>Rating: {props.anime.rating}</div>
+            <div className={style.flexBox}>
               Genre:{' '}
               {props.anime.genres.map((ele) => {
-                return `${ele.name}, `;
+                return `${ele.name}/`;
               })}
             </div>
           </div>
