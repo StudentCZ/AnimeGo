@@ -12,7 +12,7 @@ function AnimeCard(props) {
     <article>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
+          <Typography sx={{ fontSize: 20 }} color='text.secondary' gutterBottom>
             <a
               className={style.titleLink}
               href={props.anime.url}
