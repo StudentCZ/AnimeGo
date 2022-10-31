@@ -23,9 +23,8 @@ function AnimeCard(props) {
             />
           </Typography>
           <Typography variant='body2'>
-            well meaning and kindly.
+            {props.anime.synopsis}
             <br />
-            {'"a benevolent smile"'}
           </Typography>
         </CardContent>
         <CardActions>
@@ -40,9 +39,7 @@ function AnimeCard(props) {
         <div className={style.container}>
           <div></div>
 
-          <div>
-            <p>{props.anime.synopsis}</p>
-          </div>
+          <div></div>
           <div className={style.flexContainer}>
             <div className={style.flexBox1}>
               Episodes: {props.anime.episodes}{' '}
