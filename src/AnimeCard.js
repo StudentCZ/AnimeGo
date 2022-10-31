@@ -24,7 +24,10 @@ function AnimeCard(props) {
           </Typography>
           <Typography variant='h5' component='div'></Typography>
           <Typography sx={{ mb: 1.5 }} color='text.secondary'>
-            adjective
+            <img
+              src={props.anime.images.jpg.image_url}
+              alt='jikan api images'
+            />
           </Typography>
           <Typography variant='body2'>
             well meaning and kindly.
@@ -43,12 +46,7 @@ function AnimeCard(props) {
       <figure>
         <div className={style.container}>
           <div></div>
-          <div>
-            <img
-              src={props.anime.images.jpg.image_url}
-              alt='jikan api images'
-            />
-          </div>
+
           <div>
             <p>{props.anime.synopsis}</p>
           </div>
