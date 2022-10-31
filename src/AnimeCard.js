@@ -13,14 +13,7 @@ function AnimeCard(props) {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} color='text.secondary' gutterBottom>
-            <a
-              className={style.titleLink}
-              href={props.anime.url}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <h2 className={style.cardsText}>{props.anime.title}</h2>
-            </a>
+            {props.anime.title}
           </Typography>
           <Typography variant='h5' component='div'></Typography>
           <Typography sx={{ mb: 1.5 }} color='text.secondary'>
