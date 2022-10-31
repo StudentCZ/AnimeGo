@@ -22,10 +22,14 @@ function AnimeCard(props) {
               alt='jikan api images'
             />
           </Typography>
-          <Typography variant='body2'>
-            {props.anime.synopsis}
-            <br />
-          </Typography>
+          <Box>
+            <Typography variant='body2'>
+              {props.anime.synopsis}
+              <br />
+              <br />
+              Episodes: {props.anime.episodes} Type: {props.anime.type}
+            </Typography>
+          </Box>
         </CardContent>
         <CardActions>
           <Button size='medium'>
@@ -41,9 +45,6 @@ function AnimeCard(props) {
 
           <div></div>
           <div className={style.flexContainer}>
-            <div className={style.flexBox1}>
-              Episodes: {props.anime.episodes}{' '}
-            </div>
             <div className={style.flexBox1}> Type: {props.anime.type}</div>
             <div className={style.flexBox1}>
               Duration: {props.anime.duration}{' '}
