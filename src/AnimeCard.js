@@ -22,12 +22,15 @@ function AnimeCard(props) {
               alt='jikan api images'
             />
           </Typography>
+
           <Box>
-            <Typography variant='body2'>
-              {props.anime.synopsis}
-              <br />
-              <br />
-              Episodes: {props.anime.episodes} Type: {props.anime.type}
+            <Typography>{props.anime.synopsis}</Typography>
+            <br />
+            <Typography pr={3} style={{ display: 'inline-block' }}>
+              Episodes: {props.anime.episodes}
+            </Typography>
+            <Typography style={{ display: 'inline-block' }}>
+              Type: {props.anime.type}
             </Typography>
           </Box>
         </CardContent>
