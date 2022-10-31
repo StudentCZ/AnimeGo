@@ -41,6 +41,15 @@ function AnimeCard(props) {
             <Typography pr={2} style={{ display: 'inline-block' }}>
               Year: {props.anime.year ? props.anime.year : 'N/A'}
             </Typography>
+            <Typography pr={2} style={{ display: 'inline-block' }}>
+              Rating: {props.anime.rating}
+            </Typography>
+            <Typography pr={2} style={{ display: 'inline-block' }}>
+              Genre:
+              {props.anime.genres.map((ele) => {
+                return `${ele.name}`;
+              })}
+            </Typography>
           </Box>
         </CardContent>
         <CardActions>
@@ -51,22 +60,6 @@ function AnimeCard(props) {
           </Button>
         </CardActions>
       </Card>
-      <figure>
-        <div className={style.container}>
-          <div></div>
-
-          <div></div>
-          <div className={style.flexContainer}>
-            <div className={style.flexBox1}>Rating: {props.anime.rating}</div>
-            <div className={style.flexBox}>
-              Genre:{' '}
-              {props.anime.genres.map((ele) => {
-                return `${ele.name}/`;
-              })}
-            </div>
-          </div>
-        </div>
-      </figure>
     </article>
   );
 }
