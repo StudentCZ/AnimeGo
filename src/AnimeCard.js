@@ -36,7 +36,7 @@ function AnimeCard(props) {
               Duration: {props.anime.duration}
             </Typography>
             <Typography pr={2} style={{ display: 'inline-block' }}>
-              Score: {props.anime.score}/10 Year:{' '}
+              Score: {props.anime.score}
             </Typography>
             <Typography pr={2} style={{ display: 'inline-block' }}>
               Year: {props.anime.year ? props.anime.year : 'N/A'}
@@ -45,9 +45,9 @@ function AnimeCard(props) {
               Rating: {props.anime.rating}
             </Typography>
             <Typography pr={2} style={{ display: 'inline-block' }}>
-              Genre:
+              Genre:{' '}
               {props.anime.genres.map((ele) => {
-                return `${ele.name}`;
+                return `${ele.name}, `;
               })}
             </Typography>
           </Box>
