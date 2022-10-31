@@ -10,6 +10,27 @@ import Typography from '@mui/material/Typography';
 function AnimeCard(props) {
   return (
     <article>
+      <Card sx={{ minWidth: 275 }}>
+        <CardContent>
+          <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
+            <a href={props.anime.url} target='_blank' rel='noreferrer'>
+              <span>{props.anime.url}</span>
+            </a>
+          </Typography>
+          <Typography variant='h5' component='div'></Typography>
+          <Typography sx={{ mb: 1.5 }} color='text.secondary'>
+            adjective
+          </Typography>
+          <Typography variant='body2'>
+            well meaning and kindly.
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size='medium'>Learn More</Button>
+        </CardActions>
+      </Card>
       <figure>
         <div className={style.container}>
           <a href={props.anime.url} target='_blank' rel='noreferrer'>
