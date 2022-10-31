@@ -13,8 +13,13 @@ function AnimeCard(props) {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
-            <a href={props.anime.url} target='_blank' rel='noreferrer'>
-              <span>{props.anime.url}</span>
+            <a
+              className={style.titleLink}
+              href={props.anime.url}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <h2 className={style.cardsText}>{props.anime.title}</h2>
             </a>
           </Typography>
           <Typography variant='h5' component='div'></Typography>
@@ -28,24 +33,16 @@ function AnimeCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size='medium'>Learn More</Button>
+          <Button size='medium'>
+            <a href={props.anime.url} target='_blank' rel='noreferrer'>
+              Learn More
+            </a>
+          </Button>
         </CardActions>
       </Card>
       <figure>
         <div className={style.container}>
-          <a href={props.anime.url} target='_blank' rel='noreferrer'>
-            <span>{props.anime.url}</span>
-          </a>
-          <div>
-            <a
-              className={style.titleLink}
-              href={props.anime.url}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <h2 className={style.cardsText}>{props.anime.title}</h2>
-            </a>
-          </div>
+          <div></div>
           <div>
             <img
               src={props.anime.images.jpg.image_url}
