@@ -20,7 +20,6 @@ function App() {
       `https://api.jikan.moe/v4/anime?q=${query}&order_by=title_english&sfw=true&sort=acs&limit=10`
     ).then((res) => res.json());
     setAnimeList(data);
-    console.log(data);
   };
 
   return (
