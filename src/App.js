@@ -4,10 +4,11 @@ import Search from './Search';
 
 function App() {
   const [animeList, setAnimeList] = useState([]);
-  const [search, setSearch] = useState('Naruto');
+  const [search, setSearch] = useState('');
+  const [start, setStart] = useState('Naruto');
 
   useEffect(() => {
-    fetchAnime(search);
+    fetchAnime(start);
   }, []);
 
   const HandleSearch = (event) => {
