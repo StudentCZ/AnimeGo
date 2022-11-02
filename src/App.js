@@ -3,12 +3,12 @@ import style from './App.module.css';
 import Search from './Search';
 
 function App() {
+  const initalAnime = 'Naruto';
   const [animeList, setAnimeList] = useState([]);
   const [search, setSearch] = useState('');
-  const [start] = useState('Naruto');
 
   useEffect(() => {
-    fetchAnime(start);
+    fetchAnime(initalAnime);
   }, []);
 
   const HandleSearch = (event) => {
