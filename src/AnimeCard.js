@@ -11,9 +11,15 @@ function AnimeCard(props) {
     <article>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography sx={{ fontSize: 25 }} color='text.secondary' gutterBottom>
-            {props.anime.title}
-          </Typography>
+          <Box sx={{ bgcolor: 'secondary.main' }}>
+            <Typography
+              sx={{ fontSize: 25 }}
+              color='text.secondary'
+              gutterBottom
+            >
+              {props.anime.title}
+            </Typography>
+          </Box>
           <Typography variant='h5' component='div'></Typography>
           <Typography sx={{ mb: 1.5 }} color='text.secondary'>
             <img
