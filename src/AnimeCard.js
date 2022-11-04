@@ -13,7 +13,7 @@ function AnimeCard(props) {
         <CardContent>
           <Box sx={{ bgcolor: 'secondary.main' }}>
             <Typography
-              sx={{ fontSize: 25 }}
+              sx={{ fontSize: 28 }}
               color='text.secondary'
               gutterBottom
             >
@@ -29,7 +29,9 @@ function AnimeCard(props) {
           </Typography>
 
           <Box>
-            <Typography>{props.anime.synopsis}</Typography>
+            <Typography sx={{ fontSize: 18 }}>
+              {props.anime.synopsis}
+            </Typography>
             <br />
             <Typography pr={2} style={{ display: 'inline-block' }}>
               Episodes: {props.anime.episodes}
