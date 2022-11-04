@@ -20,7 +20,7 @@ function AnimeCard(props) {
               {props.anime.title}
             </Typography>
           </Box>
-          <Typography variant='h5' component='div'></Typography>
+
           <Typography sx={{ mb: 1.5 }} color='text.secondary'>
             <img
               src={props.anime.images.jpg.image_url}
