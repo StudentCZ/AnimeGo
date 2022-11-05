@@ -45,7 +45,11 @@ function AnimeCard(props) {
               {props.anime.synopsis}
             </Typography>
             <br />
-            <Grid>
+            <Grid
+              container
+              rowSpacing={1}
+              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+            >
               <Stack direction='row' spacing={2}>
                 <Item>Episodes: {props.anime.episodes}</Item>
                 <Item>Type: {props.anime.type}</Item>
