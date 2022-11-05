@@ -40,7 +40,10 @@ function AnimeCard(props) {
           </Typography>
 
           <Box>
-            <Stack direction='row' spacing={2}></Stack>
+            <Stack direction='row' spacing={2}>
+              <Item>Episodes: {props.anime.episodes}</Item>
+              <Item></Item>
+            </Stack>
             <Typography sx={{ fontSize: 18 }}>
               {props.anime.synopsis}
             </Typography>
