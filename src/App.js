@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import style from './App.module.css';
 import Search from './Search';
-import CircularProgress from '@mui/material/CircularProgress';
 
 function App() {
   const initalAnime = 'Naruto';
