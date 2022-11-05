@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -45,20 +45,22 @@ function AnimeCard(props) {
               {props.anime.synopsis}
             </Typography>
             <br />
-            <Stack direction='row' spacing={2}>
-              <Item>Episodes: {props.anime.episodes}</Item>
-              <Item>Type: {props.anime.type}</Item>
-              <Item>Duration: {props.anime.duration}</Item>
-              <Item>Score: {props.anime.score}</Item>
-              <Item>Year: {props.anime.year ? props.anime.year : 'N/A'}</Item>
-              <Item>Rating: {props.anime.rating}</Item>
-              <Item>
-                Genre:{' '}
-                {props.anime.genres.map((ele) => {
-                  return `${ele.name}, `;
-                })}
-              </Item>
-            </Stack>
+            <Grid>
+              <Stack direction='row' spacing={2}>
+                <Item>Episodes: {props.anime.episodes}</Item>
+                <Item>Type: {props.anime.type}</Item>
+                <Item>Duration: {props.anime.duration}</Item>
+                <Item>Score: {props.anime.score}</Item>
+                <Item>Year: {props.anime.year ? props.anime.year : 'N/A'}</Item>
+                <Item>Rating: {props.anime.rating}</Item>
+                <Item>
+                  Genre:{' '}
+                  {props.anime.genres.map((ele) => {
+                    return `${ele.name}, `;
+                  })}
+                </Item>
+              </Stack>
+            </Grid>
           </Box>
         </CardContent>
         <CardActions>
