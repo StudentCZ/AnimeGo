@@ -43,26 +43,26 @@ function AnimeCard(props) {
             <Typography sx={{ fontSize: 18 }}>
               {props.anime.synopsis}
             </Typography>
-            <br />
-            <Grid
-              container
-              rowSpacing={1}
-              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-            >
-              <Item>Episodes: {props.anime.episodes}</Item>
-              <Item>Type: {props.anime.type}</Item>
-              <Item>Duration: {props.anime.duration}</Item>
-              <Item>Score: {props.anime.score}</Item>
-              <Item>Year: {props.anime.year ? props.anime.year : 'N/A'}</Item>
-              <Item>Rating: {props.anime.rating}</Item>
-              <Item>
-                Genre:{' '}
-                {props.anime.genres.map((ele) => {
-                  return `${ele.name}, `;
-                })}
-              </Item>
-            </Grid>
           </Box>
+          <br />
+          <Grid
+            container
+            rowSpacing={2}
+            columnSpacing={{ xs: 1, sm: 1, md: 1 }}
+          >
+            <Item>Episodes: {props.anime.episodes}</Item>
+            <Item>Type: {props.anime.type}</Item>
+            <Item>Duration: {props.anime.duration}</Item>
+            <Item>Score: {props.anime.score}</Item>
+            <Item>Year: {props.anime.year ? props.anime.year : 'N/A'}</Item>
+            <Item>Rating: {props.anime.rating}</Item>
+            <Item>
+              Genre:{' '}
+              {props.anime.genres.map((ele) => {
+                return `${ele.name}, `;
+              })}
+            </Item>
+          </Grid>
         </CardContent>
         <CardActions>
           <Button size='medium'>
