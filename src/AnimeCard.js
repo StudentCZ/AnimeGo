@@ -43,6 +43,7 @@ function AnimeCard(props) {
             <Stack direction='row' spacing={2}>
               <Item>Episodes: {props.anime.episodes}</Item>
               <Item>Type: {props.anime.type}</Item>
+              <Item>Duration: {props.anime.duration}</Item>
               <Item></Item>
               <Item></Item>
               <Item></Item>
@@ -53,9 +54,6 @@ function AnimeCard(props) {
             </Typography>
             <br />
 
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Duration: {props.anime.duration}
-            </Typography>
             <Typography pr={2} style={{ display: 'inline-block' }}>
               Score: {props.anime.score}
             </Typography>
