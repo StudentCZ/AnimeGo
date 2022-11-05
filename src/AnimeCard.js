@@ -44,30 +44,18 @@ function AnimeCard(props) {
               <Item>Episodes: {props.anime.episodes}</Item>
               <Item>Type: {props.anime.type}</Item>
               <Item>Duration: {props.anime.duration}</Item>
-              <Item></Item>
-              <Item></Item>
-              <Item></Item>
-              <Item></Item>
+              <Item>Score: {props.anime.score}</Item>
+              <Item>Year: {props.anime.year ? props.anime.year : 'N/A'}</Item>
+              <Item>Rating: {props.anime.rating}</Item>
+              <Item>
+                Genre:{' '}
+                {props.anime.genres.map((ele) => {
+                  return `${ele.name}, `;
+                })}
+              </Item>
             </Stack>
             <Typography sx={{ fontSize: 18 }}>
               {props.anime.synopsis}
-            </Typography>
-            <br />
-
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Score: {props.anime.score}
-            </Typography>
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Year: {props.anime.year ? props.anime.year : 'N/A'}
-            </Typography>
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Rating: {props.anime.rating}
-            </Typography>
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Genre:{' '}
-              {props.anime.genres.map((ele) => {
-                return `${ele.name}, `;
-              })}
             </Typography>
           </Box>
         </CardContent>
