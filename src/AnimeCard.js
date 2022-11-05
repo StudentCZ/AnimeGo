@@ -23,7 +23,7 @@ function AnimeCard(props) {
     <article>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Box sx={{ bgcolor: 'secondary.main' }}>
+          <Box sx={{ bgcolor: 'info.main' }}>
             <Typography
               sx={{ fontSize: 28 }}
               color='text.secondary'
