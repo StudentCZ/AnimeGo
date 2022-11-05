@@ -42,18 +42,17 @@ function AnimeCard(props) {
           <Box>
             <Stack direction='row' spacing={2}>
               <Item>Episodes: {props.anime.episodes}</Item>
+              <Item>Type: {props.anime.type}</Item>
+              <Item></Item>
+              <Item></Item>
+              <Item></Item>
               <Item></Item>
             </Stack>
             <Typography sx={{ fontSize: 18 }}>
               {props.anime.synopsis}
             </Typography>
             <br />
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Episodes: {props.anime.episodes}
-            </Typography>
-            <Typography pr={2} style={{ display: 'inline-block' }}>
-              Type: {props.anime.type}
-            </Typography>
+
             <Typography pr={2} style={{ display: 'inline-block' }}>
               Duration: {props.anime.duration}
             </Typography>
