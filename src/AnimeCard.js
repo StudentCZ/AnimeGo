@@ -40,6 +40,7 @@ function AnimeCard(props) {
           </Typography>
 
           <Box>
+            <Stack direction='row' spacing={2}></Stack>
             <Typography sx={{ fontSize: 18 }}>
               {props.anime.synopsis}
             </Typography>
