@@ -5,6 +5,7 @@ I wanted to learn how to connect to an api because I never done it before so I w
 # Technical Difficulty I Had.
 
 There were two things that got in my way at the beginning when I first started this project.
+1)The Jikan Api itself was going through a new version migration. At that time I was using V3 while V4 was being flesh out.
 
 # LINK TO APP
 
